@@ -62,7 +62,7 @@
     		var units = "imperial";
     	}
 
-		let query = "http://api.openweathermap.org/data/2.5/weather?q=" + city_location + "&APPID=" + WeatherAppID + "&units=" + units;
+		let query = "https://api.openweathermap.org/data/2.5/weather?q=" + city_location + "&APPID=" + WeatherAppID + "&units=" + units;
         console.log("Query is :" + query)
 
         $.getJSON(query,function(json){
